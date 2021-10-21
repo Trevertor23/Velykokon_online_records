@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test PWA</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div id="app">
+			<table class="records">
+				<tr>
+					<th>Date</th>
+					<th>Time</th>
+					<th>Is Busy</th>
+				</tr>
+				<tr v-for="rec in records" v-bind:style="rec.isBusy ? 'background-color:rgb(128, 128, 128)' : 'background-color: #FFF'">
+					<td>{{rec.date}}</td>
+					<td>{{rec.time}}</td>
+					<td>{{rec.isBusy}}</td>
+				</tr>
+			</table>
+        </div>
+    </body>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script>
+		
+		var App = new Vue({
+			el:"#app",
+			data:{
+				records:[
+					{date:"21.10.2021",time:"14:00",isBusy:true},
+					{date:"21.10.2021",time:"15:00",isBusy:true},
+					{date:"21.10.2021",time:"16:00",isBusy:false},
+					{date:"21.10.2021",time:"17:00",isBusy:false}
+				],
+			},
+		})
+		
+	</script>
+</html>

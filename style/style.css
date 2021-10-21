@@ -1,0 +1,23 @@
+body{
+    background-color: #a0aeb1;
+}
+.login{
+    margin-top:20%;
+ 
+    text-align: center;
+}
+form{
+    
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+.records{
+	border: 1px solid;
+	display:flex;
+	max-width:300px;
+	margin:auto;
+	font-size: 30px;
+	justify-content:center;
+}
