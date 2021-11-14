@@ -1,0 +1,20 @@
+{
+    "name": "ONLINE RECORDS SERVICE",
+    "short_name": "RECORDS",
+    "icons":[
+        {
+            "src":"/icons/app-icon.jpg",
+            "type":"image/png",
+            "sizes":"600x600"
+        }
+    ],
+    "start_url":"/index.html",
+    "scopes":".",
+    "display":"standalone",
+    "orientation":"portrait-primary",
+    "background-color":"#fff",
+    "theme-color":"#53E8EC",
+    "description":"Online Records Service.",
+    "dir":"ltr",
+    "lang":"en-US"
+}

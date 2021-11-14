@@ -13,7 +13,6 @@
   },
   "author": "",
   "license": "ISC",
-
   "homepage": "",
   "devDependencies": {
     "webpack": "^5.59.0",
@@ -22,10 +21,12 @@
   },
   "dependencies": {
     "axios": "^0.23.0",
+    "sw-precache-webpack-plugin": "^1.0.0",
     "vue-axios": "^3.3.7",
     "vue-loader": "^15.9.8",
     "vue-router": "^3.5.2",
     "vue-template-compiler": "^2.6.14",
-    "vue.js": "^0.3.2"
+    "vue.js": "^0.3.2",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }

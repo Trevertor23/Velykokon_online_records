@@ -1,0 +1,80 @@
+body{
+    background-color: #a0aeb1;
+}
+.main-header{
+    display: flex;
+    border-radius: 5px;
+    background-color:#fff;
+    margin-bottom:100px;
+    justify-content:center;
+}
+.header-title{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left: 15px;
+}
+.header-logout{
+    margin-right: 15px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.records{
+    border: 1px solid;
+    max-width:300px;
+    margin:auto;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+/*only for 'records' table (down)*/
+table.records tr{
+    border-radius: 5px;
+}
+table.records th{
+    border-radius: 10px;
+}
+table.records td{
+    border-bottom: 1px solid;
+}
+table.records td:not(:last-child){
+    border-right: 1px solid;
+}
+table.records tr:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+/*only for 'records' table (look up)*/
+.login-btn{
+    padding:8 16 ;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    font-size:16px;
+    line-height: 24px;
+}
+.login-form{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.login-input{
+    font-size:15px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px){
+    .main-header{
+        font-size: 32px;
+    }
+    .login-form{
+        width: 70%;
+    }
+}

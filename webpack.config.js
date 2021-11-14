@@ -1,5 +1,7 @@
 var path = require('path');
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = {
   
@@ -23,7 +25,28 @@ module.exports = {
   },
   plugins: [
     // make sure to include the plugin!
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+
+//     new WebpackPwaManifest({
+//     name: 'ONLINE RECORDS SERVICE',
+//     short_name: 'RECORDS',
+//     crossorigin: 'use-credentials',
+//     icons:[
+//         {
+//             src: path.resolve('icons/app-icon.jpg'),
+//             sizes:'600x600'
+//         }
+//     ],
+//     //scopes:'.',
+//     display:'standalone',
+//     orientation:'portrait-primary',
+//     background_color:'#fff',
+//     theme_color:'#53E8EC',
+//     description:'Online Records Service.',
+//     dir:'ltr',
+//     lang:'en-US'
+// })
+
   ],
   devServer: {
     static: path.join(__dirname, 'src'),

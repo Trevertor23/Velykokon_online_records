@@ -1,9 +1,12 @@
 <template>
-    <div>
-       Login: <input type="text" v-model="login">
-       <br>Password: <input type="password" v-model="password">
-       <button v-on:click="loging">Log In</button>
-       <h1>{{result}}</h1>
+    <div class="login">
+        <div align="center" class="login-form">
+            <h1>Авторизація</h1>
+            <input type="text" v-model="login" placeholder="Введіть логін" class="login-input">
+            <br><input type="password" v-model="password" placeholder="Пароль" class="login-input"><br><br>
+            <button v-on:click="loging" class="login-btn">Log In</button>
+            <h1>{{result}}</h1>
+        </div>
     </div>
 </template>
 <script>
