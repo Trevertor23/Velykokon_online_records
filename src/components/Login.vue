@@ -1,11 +1,21 @@
 <template>
     <div class="login">
-        <div align="center" class="login-form">
+        <div  class="login-form">
             <h1>Авторизація</h1>
-            <input type="text" v-model="login" placeholder="Введіть логін" class="login-input">
-            <br><input type="password" v-model="password" placeholder="Пароль" class="login-input"><br><br>
+            <!-- <input type="text" v-model="login" placeholder="Введіть логін" class="login-input">
+            <br><input type="password" v-model="password" placeholder="Пароль" class="login-input"><br><br> -->
+            <div class="form-label-group">
+                <input type="login" id="inputEmail" class="form-control" placeholder="Логін" required autofocus v-model="login">
+                <label for="inputEmail">Введіть логін</label>
+            </div>
+
+            <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required v-model="password">
+                <label for="inputPassword">Пароль</label>
+            </div>
             <button v-on:click="loging" class="login-btn">Log In</button>
-            <h1>{{result}}</h1>
+            <h3>{{result}}</h3>
+            
         </div>
     </div>
 </template>

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "api":"node api/mysql.js",
+    "test": "concurrently --kill-others \"npm run api\" \"npm run start\""
   },
   "repository": {
     "type": "git",
@@ -15,12 +17,15 @@
   "license": "ISC",
   "homepage": "",
   "devDependencies": {
+    "concurrently": "^6.4.0",
     "webpack": "^5.59.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
     "axios": "^0.23.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
     "sw-precache-webpack-plugin": "^1.0.0",
     "vue-axios": "^3.3.7",
     "vue-loader": "^15.9.8",

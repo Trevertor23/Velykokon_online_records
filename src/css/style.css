@@ -1,5 +1,6 @@
 body{
-    background-color: #a0aeb1;
+    background: rgb(199,236,244);
+background: linear-gradient(90deg, rgba(199,236,244,1) 0%, rgba(115,186,201,1) 27%, rgba(76,191,215,1) 100%);
 }
 .main-header{
     display: flex;
@@ -7,11 +8,16 @@ body{
     background-color:#fff;
     margin-bottom:100px;
     justify-content:center;
+    -webkit-box-shadow: 0px 9px 11px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 9px 11px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 9px 11px 0px rgba(34, 60, 80, 0.2);
+    font-family: "Lemon Milk Medium";
 }
 .header-title{
     margin-top:auto;
     margin-bottom:auto;
     margin-left: 15px;
+    background-color: #f5f5dc;
 }
 .header-logout{
     margin-right: 15px;
@@ -58,6 +64,10 @@ table.records tr:last-child{
     color: #595959;
     font-size:16px;
     line-height: 24px;
+    width: 100%;
+}
+.login-btn:hover{
+    background: #dddddd;
 }
 .login-form{
     background-color: #fff;
@@ -69,6 +79,15 @@ table.records tr:last-child{
     font-size:15px;
     margin-bottom: 10px;
 }
+.form{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content:center;
+    margin: auto;
+    max-width: 500px;
+    justify-content: space-between;
+}
 
 @media (max-width: 1000px){
     .main-header{
@@ -78,3 +97,8 @@ table.records tr:last-child{
         width: 70%;
     }
 }
+
+@font-face {
+    font-family: "Lemon Milk Medium";
+    src: url("../fonts/LemonMilkMedium-mLZYV.otf") format("opentype");
+  }
